@@ -5,11 +5,12 @@
 <link href="main.css" rel="stylesheet" type="text/css">
 </head>
 
-<body>
+<body id="body">
 <table>
 <div id="result"></div>
 <tr>
-    <td colspan="4"><button onclick="z()" style="width:413px;">c</button></td>
+    <td colspan="3"><button onclick="z()" style="width:308px;">c</button></td>
+    <td colspan="1"><button onclick="y()" style="width:100px;">←</button></td>
 </tr>
 <tr>
     <td><button onclick="a()">7</button></td>
@@ -38,6 +39,12 @@
 
 </table>
 
+<div id="farver">
+<h3 id="textf">FARVE:</h3>
+<button id="farveknap" onclick="cg()"></button>
+<button id="farveknap1"  onclick="cw()"></button>
+<button id="farveknap2" onclick="cb()"></button>
+</div>
 
 <script src="script.js"></script>
 </body>

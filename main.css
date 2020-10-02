@@ -2,25 +2,66 @@ body{
     margin:0;
     padding:0;
     margin-top: 15px;
+    background-color: white;
 }
 
 table{
     margin:auto;
-    border:1px solid black;
 }
 button{
     height: 100px;
     width:100px;
     font-size: 80px;
+    font-family: 'Gill Sans MT';
 }
-div{
-    height:100px;
-    width:417.7px;
-    font-size:90px;
+#result{
+    padding-top:10px;
+    padding-right: 10px;
+    height:80px;
+    width:407px;
+    font-size:60px;
+    font-family: 'Gill Sans MT';
     text-align: right;
     margin:auto;
-    border:1px solid black;
+    border: 5px solid black;
 }
+
 button:hover{
     color: red;
+}
+
+h3{
+    margin:4px;
+    margin-left:0px;
+    color: black;
+}
+
+#farveknap{
+    background-color:grey;
+    height: 40px;
+    width:40px;
+}
+#farveknap1{
+    background-color:white;
+    height: 40px;
+    width:40px;
+}
+#farveknap2{
+    background-color:black;
+    height:40px;
+    width:40px;
+}
+
+#farveknap:hover,#farveknap1:hover,#farveknap2:hover{
+    opacity:0.75;
+}
+
+#farver{
+    padding-top:10px;
+    padding-right: 10px;
+    height:80px;
+    width:200px;
+    font-family: 'Gill Sans MT';
+    text-align: left;
+    color:white;
 }

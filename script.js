@@ -1,7 +1,11 @@
 result = document.getElementById("result");
 
+function to_decimaler(x){
+    return Number.parseFloat(x).toFixed(2);
+}
+
 function check(){
-if (result.innerHTML.length > 8){
+if (result.innerHTML.length > 13){
     result.innerHTML = "fejl";
 }}
 
@@ -81,10 +85,38 @@ function o(){
 }
 function p(){
     console.log("=")
-    result.innerHTML = eval(result.innerHTML);
+    result.innerHTML = to_decimaler(eval(result.innerHTML));
+    
+    if(String(result.innerHTML).includes(".00")){
+    result.innerHTML = String(result.innerHTML).slice(0,-3);
+    }
+
     check();
 }
 function z(){
     console.log("c")
     result.innerHTML = "";
+}
+
+function y(){
+    result.innerHTML = String(result.innerHTML).slice(0,-1);
+}
+
+function cg(){
+    document.getElementById("body").style.backgroundColor = "grey";
+    document.getElementById("textf").style.color = "black";
+    document.getElementById("result").style.color = "black";
+    document.getElementById("result").style.border = "5px solid white";
+}
+function cw(){
+    document.getElementById("body").style.backgroundColor = "white";
+    document.getElementById("textf").style.color = "black";
+    document.getElementById("result").style.color = "black";4
+    document.getElementById("result").style.border = "5px solid black";
+}
+function cb(){
+    document.getElementById("body").style.backgroundColor = "black";
+    document.getElementById("textf").style.color = "white";
+    document.getElementById("result").style.color = "white";
+    document.getElementById("result").style.border = "5px solid white";
 }
