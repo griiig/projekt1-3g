@@ -13,6 +13,7 @@ button{
     width:100px;
     font-size: 80px;
     font-family: 'Gill Sans MT';
+    background-color: white;
 }
 #result{
     padding-top:10px;
@@ -40,16 +41,22 @@ h3{
     background-color:grey;
     height: 40px;
     width:40px;
+    border-width:5px;
+    border-color: white;
 }
 #farveknap1{
     background-color:white;
     height: 40px;
     width:40px;
+    border-width:5px;
+    border-color:black;
 }
 #farveknap2{
     background-color:black;
     height:40px;
     width:40px;
+    border-width:5px;
+    border-color:white;
 }
 
 #farveknap:hover,#farveknap1:hover,#farveknap2:hover{

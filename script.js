@@ -119,4 +119,5 @@ function cb(){
     document.getElementById("textf").style.color = "white";
     document.getElementById("result").style.color = "white";
     document.getElementById("result").style.border = "5px solid white";
+
 }
